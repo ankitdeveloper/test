@@ -16,4 +16,5 @@ if ($retval == true) {
 } else {
     echo "Message could not be sent...";
     print_r(error_get_last());
+    echo "<br>DONE";
 }
