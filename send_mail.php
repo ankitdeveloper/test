@@ -1,4 +1,9 @@
 <?php
+
+error_reporting(-1);
+ini_set('display_errors', 'On');
+set_error_handler("var_dump");
+
 $to = "kupendra@simprosys.net";
 $subject = "This is subject";
 
@@ -16,5 +21,5 @@ if ($retval == true) {
 } else {
     echo "Message could not be sent...";
     print_r(error_get_last());
-    echo "<br>DONE";
+    echo "<br>DONE 1";
 }
